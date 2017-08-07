@@ -5,7 +5,14 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff:
+.idea/**/.name
+.idea/**/compiler.xml
 .idea/**/workspace.xml
+.idea/**/vcs.xml
+.idea/**/modules.xml
+.idea/**/sonarIssues.xml
+.idea/**/misc.xml
+.idea/**/encodings.xml
 .idea/**/tasks.xml
 .idea/dictionaries
 
@@ -35,6 +42,7 @@ cmake-build-debug/
 
 # IntelliJ
 /out/
+*.iml
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
