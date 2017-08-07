@@ -1,0 +1,37 @@
+### Spring properties
+# Service registers under this name
+spring:
+  application:
+    name: user-microservice
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+
+  ds_read.url: jdbc:mysql://localhost:3306/booking_ticket_read
+  ds_read.username: root
+  ds_read.password: root
+  ds_read.driverClassName: com.mysql.jdbc.Driver
+
+  ds_write.url: jdbc:mysql://localhost:3306/booking_ticket_write
+  ds_write.username: root
+  ds_write.password: root
+  ds_write.driverClassName: com.mysql.jdbc.Driver
+
+# HTTP Server (Tomcat) Port
+server:
+  port: 6082
+
+# Discovery Server Access
+eureka:
+  instance:
+    nonSecurePort: ${server.port:6082}
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+
+# Disable Spring Boot's "Whitelabel" default error page, so we can use our own
+error:
+  whitelabel:
+    enabled: false

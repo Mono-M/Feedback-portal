@@ -1,0 +1,28 @@
+### Spring properties
+# Service registers under this name
+spring:
+  application:
+    name: apigateway
+
+server:
+  port: 8080
+
+
+# Discovery Server Access
+eureka:
+    instance:
+        nonSecurePort: ${server.port:8080}
+    client:
+      serviceUrl:
+        defaultZone: http://localhost:1111/eureka/
+
+# Disable Spring Boot's "Whitelabel" default error page, so we can use our own
+error:
+  whitelabel:
+    enabled: false
+
+#ZUUL
+zuul:
+  add-host-header: true
+  routes:
+    user-microservice: user/**
