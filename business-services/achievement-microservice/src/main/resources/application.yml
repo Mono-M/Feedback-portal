@@ -1,0 +1,33 @@
+### Spring properties
+# Service registers under this name
+spring:
+  application:
+    name: achievement-microservice
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+    hibernate:
+      hbm2ddl:
+        auto: create-drop
+
+  db.url: jdbc:mysql://localhost:3306/achievement_db
+  db.username: root
+  db.password: root
+  db.driverClassName: com.mysql.jdbc.Driver
+
+# HTTP Server (Tomcat) Port
+server:
+  port: 6080
+
+# Discovery Server Access
+eureka:
+  instance:
+    nonSecurePort: ${server.port:6082}
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+
+# Disable Spring Boot's "Whitelabel" default error page, so we can use our own
+error:
+  whitelabel:
+    enabled: false
