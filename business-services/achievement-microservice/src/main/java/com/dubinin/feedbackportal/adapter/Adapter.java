@@ -1,4 +1,4 @@
-package com.dubinin.feedbackportal.adapter.adapter;
+package com.dubinin.feedbackportal.adapter;
 
 /**
  * Created by Vladyslav_Dubinin on 21/7/2017.

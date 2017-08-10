@@ -1,6 +1,6 @@
 package com.dubinin.feedbackportal.service.impl;
 
-import com.dubinin.feedbackportal.adapter.adapter.Adapter;
+import com.dubinin.feedbackportal.adapter.Adapter;
 import com.dubinin.feedbackportal.dto.AchievementMessageDto;
 import com.dubinin.feedbackportal.entity.AchievementMessage;
 import com.dubinin.feedbackportal.repository.AchievementMessageRepository;

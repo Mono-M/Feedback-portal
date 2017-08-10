@@ -1,6 +1,6 @@
-package com.dubinin.feedbackportal.adapter.adapter.impl;
+package com.dubinin.feedbackportal.adapter.impl;
 
-import com.dubinin.feedbackportal.adapter.adapter.Adapter;
+import com.dubinin.feedbackportal.adapter.Adapter;
 import org.dozer.DozerBeanMapper;
 import org.dozer.Mapper;
 import org.springframework.context.annotation.Scope;
