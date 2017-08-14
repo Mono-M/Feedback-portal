@@ -81,8 +81,8 @@ fabric.properties
 /app/**/*.js.map
 
 # dependencies
-/node_modules
-/bower_components
+/view/node_modules
+/view/bower_components
 
 # IDEs and editors
 /.idea

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/ng-cloak.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid" ng-cloak>
+        <page-header></page-header>
+        
+        <div ng-controller="DemoController as $ctrl">
+            {{$ctrl.demo}}
+        </div>
+    </div>
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="vendor/bootstrap/js/modal.js"></script>
+    <script src="vendor/bootstrap/js/collapse.js"></script>
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="vendor/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="app.js"></script>
+    <!--COMMON-->
+    <script src="common/common.module.js"></script>
+    <!--COMMON.SERVICE-->
+    <script src="common/services/common-services.module.js"></script>
+    <script src="common/services/demo.service.js"></script>
+    <!--COMMON.FILTER-->
+    <script src="common/filters/common-filters.module.js"></script>
+    <!--COMMON.DIRECTIVE-->
+    <script src="common/directive/common-directive.module.js"></script>
+    <script src="common/directive/page-directive.js"></script>
+    <!--COMMON.CONSTANT-->
+    <script src="common/constant/common-constant.module.js"></script>
+    <script src="common/constant/constants.js"></script>
+    <!--FEATURE-->
+    <script src="feature/common.feature.js"></script>
+    <!--FEATURE.CONTROLLER-->
+    <script src="feature/demo.controller.js"></script>
+</body>
+
+</html>
