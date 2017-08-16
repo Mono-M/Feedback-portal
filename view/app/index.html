@@ -5,23 +5,26 @@
     <meta charset="utf-8">
     <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="vendor/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="vendor/croppie-2.5.0/croppie.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/achievement-page.css" rel="stylesheet">
+    <link href="css/achievement-cut-image.css" rel="stylesheet">
     <link href="css/ng-cloak.css" rel="stylesheet">
 </head>
 
-<body>
-    <div class="container-fluid" ng-cloak>
-        <page-header></page-header>
-        
-        <div ng-controller="DemoController as $ctrl">
-            {{$ctrl.demo}}
-        </div>
+<body ng-app="app" ng-cloak>
+    <page-header></page-header>
+
+    <div class="container-fluid">
+        <div ng-view></div>
     </div>
     <script src="vendor/jquery/dist/jquery.js"></script>
     <script src="vendor/bootstrap/js/modal.js"></script>
     <script src="vendor/bootstrap/js/collapse.js"></script>
     <script src="vendor/angular/angular.min.js"></script>
     <script src="vendor/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="vendor/angular/angular-route.js"></script>
+    <script src="vendor/croppie-2.5.0/croppie.js"></script>
     <script src="app.js"></script>
     <!--COMMON-->
     <script src="common/common.module.js"></script>
@@ -30,6 +33,9 @@
     <script src="common/services/demo.service.js"></script>
     <!--COMMON.FILTER-->
     <script src="common/filters/common-filters.module.js"></script>
+    <!--COMMON.ROUTE-->
+    <script src="common/route/common-route.module.js"></script>
+    <script src="common/route/page-route.js"></script>
     <!--COMMON.DIRECTIVE-->
     <script src="common/directive/common-directive.module.js"></script>
     <script src="common/directive/page-directive.js"></script>
@@ -40,6 +46,8 @@
     <script src="feature/common.feature.js"></script>
     <!--FEATURE.CONTROLLER-->
     <script src="feature/demo.controller.js"></script>
+    <script src="feature/achievement/achievement-list.controller.js"></script>
+    <script src="feature/achievement/achievement-cut-image.controller.js"></script>
 </body>
 
 </html>

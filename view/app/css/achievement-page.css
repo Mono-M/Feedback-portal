@@ -1,0 +1,53 @@
+.achievement {
+    cursor: pointer;
+}
+
+.achievement .thumbnail {
+    position: relative;
+}
+
+.achievement .achievement-icon {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.achievement .sender {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.achievement .sender-icon {
+    width: 40px;
+}
+
+.achievement .sender-name {
+    display: inline-block;
+}
+
+.achievement .info-box {
+    padding-top: 35px;
+}
+
+.achievement .achievement-label {
+    height: 40px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.achievement .achievement-label p{
+    font-size: 24px;
+}
+
+.achievement .achievement-description {
+    height: 80px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.achievement .achievement-bg-image {
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}

@@ -4,6 +4,6 @@
         "commonFilters",
         "commonServices",
         "commonDirectivs",
-        "commonConstant"
+        "commonRoute"
     ]);
 })();
